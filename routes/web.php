@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Guest\IndexController;
+use App\Http\Controllers\Guest\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
