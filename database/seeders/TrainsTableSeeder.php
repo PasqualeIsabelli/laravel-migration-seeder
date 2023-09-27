@@ -26,6 +26,7 @@ class TrainsTableSeeder extends Seeder
       $train->wagons_number = $faker->numberBetween(1, 9);
       $train->on_time = $faker->boolean();
       $train->deleted = $faker->boolean();
+      $train->departure_date = $faker->dateTime();
 
       $train->save();
     }

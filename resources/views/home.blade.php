@@ -18,13 +18,13 @@
       <th scope="col">Numero Carrozze</th>
       <th scope="col">In Orario</th>
       <th scope="col">Cancellato</th>
+      <th scope="col">Data di Partenza</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
     @foreach ($trains as $train)
       <tr>
-        <th scope="row"></th>
-        <td>{{ $train->company }}</td>
+        <th scope="row">{{ $train->company }}</th>
         <td>{{ $train->departure_station }}</td>
         <td>{{ $train->arrival_station }}</td>
         <td>{{ $train->departure_time }}</td>
@@ -33,6 +33,7 @@
         <td>{{ $train->Wagon_number }}</td>
         <td>{{ $train->on_time }}</td>
         <td>{{ $train->deleted }}</td>
+        <td>{{ $train->departure_date }}</td>
       </tr>
     @endforeach
   </tbody>
